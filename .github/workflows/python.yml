@@ -166,7 +166,7 @@ jobs:
           python setup.py sdist
         shell: bash
         working-directory: python
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v4.1.7
         with:
           path: python
       - name: Set build number to ${{ inputs.build }}
